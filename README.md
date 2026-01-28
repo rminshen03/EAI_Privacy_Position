@@ -61,7 +61,7 @@
 ## 🏗️ 2. Taxonomy <a name="2-taxonomy"></a>
 
 <div align="center">
-  <img src="assets/taxonomy.png" width="95%" alt="Taxonomy"/>
+  <img src="assets/fig2.png" width="95%" alt="Taxonomy and Hardware"/>
   <br>
   <em>Fig. [cite_start]1: The SPINE evaluation framework across four phases: Instruction Understanding, Environment Perception, Action Planning, and Physical Interaction[cite: 63, 172].</em>
 </div>
@@ -90,16 +90,16 @@
 ## 👁️ 4. Case Study <a name="4-case-study"></a>
 
 <div align="center">
-  <img src="assets/overview.png" width="90%" alt="Case Study Overview"/>
+  <img src="assets/fig1.png" width="90%" alt="Case Study Results"/>
   <br>
-  <em>Fig. [cite_start]2: Long-range navigation task definition: Transitioning from Public (L1) to Restricted (L4) zones[cite: 410, 451].</em>
+  <em>Fig. [cite_start]2: Long-range navigation task definition and experimental validation[cite: 410, 451].</em>
 </div>
 
 ### Experimental Qualitative Analysis
 [cite_start]We formulated and validated two primary research hypotheses[cite: 403, 404]:
 * [cite_start]**H1: Semantic Compensation**: High-level intent serves as a semantic anchor, maintaining a baseline Success Rate (SR) even under perceptual degradation[cite: 457, 460].
 * [cite_start]**H2: Heuristic Decoupling**: Stringent privacy constraints lead to a logic break between perception and planning, sharply declining navigation efficiency (SPL)[cite: 537]. 
-  * [cite_start]*Results*: SR decreased by 30.3%, while SPL plummeted by 43.3% in restricted settings[cite: 540].
+  * [cite_start]**Results**: SR decreased by 30.3%, while SPL plummeted by 43.3% in restricted settings[cite: 540].
 
 ### Hardware Configuration
 * [cite_start]**Robot**: AgileX SCOUT MINI [cite: 415, 492]
