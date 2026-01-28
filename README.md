@@ -40,11 +40,7 @@
 - [📖 1. Introduction](#1-introduction)
 - [🏗️ 2. Taxonomy](#2-taxonomy)
 - [💬 3. SPINE Framework Design](#3-spine-framework-design)
-  - [L1-L4 Privacy Classification Matrix](#l1-l4-privacy-classification-matrix)
-  - [Full Lifecycle Governance](#full-lifecycle-governance)
 - [👁️ 4. Case Study](#4-case-study)
-  - [Simulation Results (Val-Seen/UnSeen)](#simulation-results)
-  - [Real-world Physical Deployment](#real-world-deployment)
 - [🔮 5. Challenges and Future Directions](#5-challenges-and-future-directions)
 - [🔖 Citation](#-citation)
 
@@ -60,20 +56,13 @@
 
 ## 🏗️ 2. Taxonomy <a name="2-taxonomy"></a>
 
-<div align="center">
-  <img src="assets/fig2.png" width="95%" alt="Taxonomy and Hardware"/>
-  <br>
-  <em>Fig. [cite_start]1: The SPINE evaluation framework across four phases: Instruction Understanding, Environment Perception, Action Planning, and Physical Interaction[cite: 63, 172].</em>
-</div>
+Our evaluation framework for privacy-aware Embodied AI spans four critical phases:
+1. **Instruction Understanding**: Focuses on privacy-preserving input and instruction safety.
+2. **Environment Perception**: Addresses anonymization, adversarial defense, and efficiency.
+3. **Action Planning**: Incorporates safety constraints and trajectory privacy.
+4. **Physical Interaction**: Ensures reliability and prevents sensor data leakage during deployment.
 
-### Privacy Classification Matrix
-
-| Level | Scenario Example | Trade-off Priority | Key Techniques | [cite_start]Legal Basis [cite: 80, 272] |
-|:------|:----------|:----------|:---------------------| :--- |
-| **L1: Public** | Parks, public streets | Utility First | Public Models, Universal APIs | N/A |
-| **L2: Internal** | Office corridors | Balanced | Data Anonymization, FL, TEE | GDPR Recital 26 |
-| **L3: Confidential** | Private living rooms | Privacy-Leaning | MPC, Differential Privacy | GDPR Art. 4 |
-| **L4: Restricted** | Bathrooms, bedrooms | Privacy First | Zero-Knowledge Proof, FHE | GDPR Art. 9 & 10 |
+*(Note: Taxonomy visualization diagram will be updated soon.)*
 
 ---
 
@@ -89,22 +78,28 @@
 
 ## 👁️ 4. Case Study <a name="4-case-study"></a>
 
+[cite_start]We perform a detailed case study on embodied navigation within the SPINE framework, evaluating a long-range navigation task transitioning from Public (L1) to Restricted (L4) zones[cite: 410, 451].
+
+### 4.1. Task Definition, Hypotheses & Results
 <div align="center">
-  <img src="assets/fig1.png" width="90%" alt="Case Study Results"/>
+  <img src="assets/fig1.png" width="80%" alt="Task and Analysis"/>
   <br>
-  <em>Fig. [cite_start]2: Long-range navigation task definition and experimental validation[cite: 410, 451].</em>
+  <em>Fig. 1: (a) Task Definition; (b) Research Hypotheses (H1 & H2); (c) [cite_start]Qualitative Analysis & Explanation[cite: 451, 453].</em>
 </div>
 
-### Experimental Qualitative Analysis
-[cite_start]We formulated and validated two primary research hypotheses[cite: 403, 404]:
 * [cite_start]**H1: Semantic Compensation**: High-level intent serves as a semantic anchor, maintaining a baseline Success Rate (SR) even under perceptual degradation[cite: 457, 460].
-* [cite_start]**H2: Heuristic Decoupling**: Stringent privacy constraints lead to a logic break between perception and planning, sharply declining navigation efficiency (SPL)[cite: 537]. 
-  * [cite_start]**Results**: SR decreased by 30.3%, while SPL plummeted by 43.3% in restricted settings[cite: 540].
+* [cite_start]**H2: Heuristic Decoupling**: Loss of visual landmarks causes a logic break, forcing the agent to regress from efficient heuristics into stochastic search, declining navigation efficiency (SPL)[cite: 537].
 
-### Hardware Configuration
-* [cite_start]**Robot**: AgileX SCOUT MINI [cite: 415, 492]
-* [cite_start]**Sensing**: Livox Mid-360 LiDAR & RealSense Camera [cite: 415, 466]
-* [cite_start]**Computing**: Jetson AGX Orin [cite: 415, 491]
+### 4.2. Experimental Design & Hardware Configuration
+<div align="center">
+  <img src="assets/fig2.png" width="85%" alt="Hardware and Scenarios"/>
+  <br>
+  <em>Fig. [cite_start]2: Hardware platform (AgileX SCOUT MINI) and real-world quadrant deployment[cite: 533].</em>
+</div>
+
+* [cite_start]**Robot**: AgileX SCOUT MINI[cite: 415, 492].
+* [cite_start]**Sensing Suite**: Livox Mid-360 LiDAR, RealSense Camera, and Jetson AGX Orin module[cite: 415, 466, 491].
+* [cite_start]**Quantitative Findings**: In restricted settings, Success Rate (SR) decreased by 30.3%, while Success weighted by Path Length (SPL) plummeted by 43.3%[cite: 540].
 
 ---
 
