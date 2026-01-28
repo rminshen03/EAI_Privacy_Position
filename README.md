@@ -82,7 +82,7 @@ Our evaluation framework for privacy-aware Embodied AI spans four critical phase
 
 ### 4.1. Task Definition, Hypotheses & Results
 <div align="center">
-  <img src="assets/fig1.png" width="80%" alt="Task and Analysis"/>
+  <img src="assets/fig1.png" width="40%" alt="Task and Analysis"/>
   <br>
   <em>Fig. 1: (a) Task Definition; (b) Research Hypotheses (H1 & H2); (c) [cite_start]Qualitative Analysis & Explanation[cite: 451, 453].</em>
 </div>
