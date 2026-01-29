@@ -1,3 +1,5 @@
+<div align="center">
+
 # 🔐 Position: Embodied AI Requires a Privacy-Utility Tradeoff
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -12,25 +14,17 @@
 ---
 
 <p align="center">
-  [cite_start]<b>🔥 This is the official repository for evaluation and case studies of the position paper: <br> "Embodied AI Requires a Privacy-Utility Tradeoff".</b>
+  <b>🔥 This is the official repository for evaluation and case studies of the position paper: <br> "Embodied AI Requires a Privacy-Utility Tradeoff".</b>
   <br><br>
-  [cite_start]We propose <b>SPINE</b> (Secure Privacy Integration in Next-generation Embodied AI), 
-  [cite_start]a unified privacy-aware framework that treats privacy as a dynamic control signal governing cross-stage coupling throughout the entire Embodied AI lifecycle. 
+  We propose <b>SPINE</b> (Secure Privacy Integration in Next-generation Embodied AI), 
+  a unified privacy-aware framework that treats privacy as a dynamic control signal governing cross-stage coupling throughout the entire Embodied AI lifecycle. 
   <br><br>
-  [cite_start]Our approach embeds privacy as a core primitive across four critical stages:
+  Our approach embeds privacy as a core primitive across four critical stages:
   <br>
   <b>Instruction Understanding</b> • <b>Environment Perception</b> • <b>Action Planning</b> • <b>Physical Interaction</b>
   <br><br>
   We will continue to <b>UPDATE</b> this repository with new resources and experimental data! 
 </p>
-
----
-
-## 📢 News
-
-| Date | Event |
-|:-----|:-----|
-| 🚀 2026/01 | Repository officially launched with **SPINE** framework documentation. |
 
 ---
 
@@ -45,43 +39,56 @@
 ---
 
 ## 📖 1. Introduction <a name="1-introduction"></a>
-[cite_start]Embodied AI (EAI) systems are rapidly transitioning from laboratory benchmarks to real-world domestic and occupational environments[cite: 59, 68]. [cite_start]However, existing solutions exclusively demonstrate advancements within isolated stages, which may create a systemic privacy crisis when prioritizing task utility at the expense of data privacy[cite: 60, 61]. [cite_start]We propose **SPINE** (Secure Privacy Integration in Next-generation Embodied AI), a unified framework to navigate this fundamental tradeoff[cite: 62, 140].
+Embodied AI (EAI) systems are rapidly transitioning from laboratory benchmarks to real-world domestic and occupational environments. However, existing solutions exclusively demonstrate advancements within isolated stages, which may create a systemic privacy crisis when prioritizing task utility at the expense of data privacy. We propose **SPINE**, a unified framework to navigate this fundamental tradeoff by integrating privacy-utility optimization throughout the agent's workflow.
 
 ---
 
 ## 🏗️ 2. Taxonomy <a name="2-taxonomy"></a>
-[cite_start]Our evaluation framework categorizes EAI privacy into four interdependent stages[cite: 63, 172]:
-1. [cite_start]**Instruction Understanding**: Privacy-preserving input and semantic masking[cite: 253, 258].
-2. [cite_start]**Environment Perception**: Anonymization and source-level modality restrictions[cite: 259, 260].
-3. [cite_start]**Action Planning**: Safety-aware navigation and trajectory privacy[cite: 255].
-4. [cite_start]**Physical Interaction**: In-memory execution and secure wipe protocols[cite: 262, 263].
+Our evaluation framework categorizes EAI privacy into four interdependent stages that define the information flow of an embodied agent:
+1. **Instruction Understanding**: Focuses on local sanitization of user commands and intent masking.
+2. **Environment Perception**: Addresses source-level modality restrictions and anonymization techniques.
+3. **Action Planning**: Incorporates privacy cost maps and trajectory privacy to protect user routines.
+4. **Physical Interaction**: Ensures data minimality through in-memory execution and secure wipe protocols.
+
+---
+
+## 💬 3. SPINE Framework Design <a name="3-spine-framework-design"></a>
+SPINE functions as a dynamic orchestration layer that adjusts the agent's computational behavior based on a detected privacy classification matrix (ranging from L1 Public to L4 Restricted). Crucially, this tiered approach ensures that privacy constraints are enforced holistically, preventing systemic leakage caused by treating stages as isolated components.
 
 ---
 
 ## 👁️ 4. Case Study <a name="4-case-study"></a>
 
-[cite_start]We perform a detailed case study on embodied navigation within the SPINE framework, evaluating a long-range navigation task transitioning from Public (L1) to Restricted (L4) zones[cite: 343, 401, 410].
+We perform a detailed case study on embodied navigation within the SPINE framework, evaluating a long-range navigation task transitioning from Public (L1) to Restricted (L4) zones.
 
 ### 4.1. Task Definition, Hypotheses & Results
 <div align="center">
   <img src="assets/fig1.png" width="40%" alt="Task and Analysis"/>
   <br>
-  <em>Fig. 1: (a) Task Definition; (b) Research Hypotheses (H1 & H2); (c) [cite_start]Qualitative Analysis & Explanation[cite: 344, 451, 453].</em>
+  <em>Fig. 1: (a) Task Definition; (b) Research Hypotheses (H1 & H2); (c) Qualitative Analysis & Explanation.</em>
 </div>
 
-* [cite_start]**H1: Semantic Compensation**: High-level intent serves as a semantic anchor, allowing the agent to maintain a baseline success rate even with limited visual input[cite: 457, 460].
-* [cite_start]**H2: Heuristic Decoupling**: Loss of visual landmarks causes a logic break, forcing the agent to regress from efficient heuristics into stochastic search patterns[cite: 536, 537].
-* [cite_start]**Key Findings**: In experimental scenarios, Success Rate (SR) decreased by 30.3%, while Success weighted by Path Length (SPL) plummeted by 43.3%[cite: 540].
+* **H1: Semantic Compensation**: High-level intent serves as a semantic anchor, allowing the agent to maintain a baseline success rate (SR) even when visual data is sanitized.
+* **H2: Heuristic Decoupling**: Loss of visual landmarks causes a logic break, forcing the navigation policy to regress from efficient heuristics into stochastic search patterns.
+* **Key Findings**: In experimental scenarios, Success Rate (SR) decreased by 30.3%, while Success weighted by Path Length (SPL) plummeted by 43.3% in restricted settings.
 
 ### 4.2. Experimental Design & Hardware Configuration
 <div align="center">
   <img src="assets/fig2.png" width="85%" alt="Hardware and Environment"/>
   <br>
-  <em>Fig. [cite_start]2: Hardware platform (AgileX SCOUT MINI) and real-world quadrant deployment[cite: 415, 533].</em>
+  <em>Fig. 2: Hardware platform (AgileX SCOUT MINI) and real-world quadrant deployment.</em>
 </div>
 
-* [cite_start]**Hardware Platform**: AgileX SCOUT MINI[cite: 415, 492].
-* [cite_start]**Sensing Suite**: Livox Mid-360 LiDAR [cite: 415, 466][cite_start], RealSense Camera [cite: 415, 470][cite_start], and Jetson AGX Orin module[cite: 415, 491].
+* **Hardware Platform**: AgileX SCOUT MINI mobile base.
+* **Sensing Suite**: Livox Mid-360 LiDAR for spatial mapping and RealSense Camera for visual input.
+* **Computing Unit**: Jetson AGX Orin module for real-time inference and navigation control.
+
+---
+
+## 🔮 5. Challenges and Future Directions <a name="5-challenges-and-future-directions"></a>
+* **Cross-Stage Consistency**: Ensuring seamless propagation of privacy policies from high-level instructions to physical interactions.
+* **Privacy-Utility Co-optimization**: Quantifying the Pareto frontier to balance operational performance with robust data protection.
+* **Hardware-Software Co-design**: Accelerating edge-native inference to support complex encryption without sacrificing physical agility.
 
 ---
 
