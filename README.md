@@ -18,8 +18,6 @@
   <br><br>
   We propose <b>SPINE</b> (Secure Privacy Integration in Next-generation Embodied AI), 
   a unified privacy-aware framework that treats privacy as a dynamic control signal governing cross-stage coupling throughout the entire Embodied AI lifecycle. 
-  <br><br>
-  <!-- We will continue to <b>UPDATE</b> this repository with new resources and experimental data!  -->
 </p>
 
 ---
@@ -29,6 +27,7 @@
 - [🏗️ 2. Taxonomy](#2-taxonomy)
 - [💬 3. SPINE Framework Design](#3-spine-framework-design)
 - [👁️ 4. Case Study](#4-case-study)
+- [🎥 5. Demonstration Video](#5-demonstration-video)
 - [🔖 Citation](#-citation)
 
 ---
@@ -44,6 +43,8 @@ Our evaluation framework categorizes EAI privacy into four interdependent stages
 2. **Environment Perception**: Addresses source-level modality restrictions and anonymization techniques.
 3. **Action Planning**: Incorporates privacy cost maps and trajectory privacy to protect user routines.
 4. **Physical Interaction**: Ensures data minimality through in-memory execution and secure wipe protocols.
+
+
 
 ---
 
@@ -67,7 +68,7 @@ We perform a detailed case study on embodied navigation within the SPINE framewo
 * **H2: Heuristic Decoupling**: Loss of visual landmarks causes a logic break, forcing the navigation policy to regress from efficient heuristics into stochastic search patterns.
 * **Key Findings**: In experimental scenarios, Success Rate (SR) decreased by 30.3%, while Success weighted by Path Length (SPL) plummeted by 43.3% in restricted settings.
 
-### 4.2. Experimental Design（simulator & real-word） 
+### 4.2. Experimental Design (Simulator & Real-World)
 <div align="center">
   <img src="assets/fig2.png" width="85%" alt="Hardware and Environment"/>
   <br>
@@ -77,7 +78,11 @@ We perform a detailed case study on embodied navigation within the SPINE framewo
 * **Hardware Platform**: AgileX SCOUT MINI mobile base.
 * **Sensing Suite**: Livox Mid-360 LiDAR for spatial mapping and RealSense Camera for visual input.
 * **Computing Unit**: Jetson AGX Orin module for real-time inference and navigation control.
-### 4.3. Demonstration Video (coming soon)
+
+---
+
+## 🎥 5. Demonstration Video (Coming Soon) <a name="5-demonstration-video"></a>
+> **Note**: *Full system demonstration video showing transition between privacy levels is under preparation.*
 
 ---
 
