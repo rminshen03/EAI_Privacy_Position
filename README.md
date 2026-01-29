@@ -16,7 +16,6 @@
 ---
 
 <p align="center">
-  <b>🔥 This is a curated paper list for "Position: Embodied AI Requires a Privacy-Utility Tradeoff".</b>
   <br>
   To the best of our knowledge, this is the <b>first comprehensive study</b> on privacy-utility tradeoffs in Embodied AI systems, covering the entire lifecycle across four critical stages: <b>Instruction Understanding</b>, <b>Environment Perception</b>, <b>Action Planning</b>, and <b>Physical Interaction</b>.
   <br>
