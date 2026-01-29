@@ -14,12 +14,12 @@
 ---
 
 <p align="center">
-  <b>🔥 This is the official repository for evaluation and case studies of the position paper: <br> "Embodied AI Requires a Privacy-Utility Tradeoff".</b>
+  <b>🔥 This is the repository for evaluation and case studies of the submission: <br> "Position: Embodied AI Requires a Privacy-Utility Tradeoff".</b>
   <br><br>
   We propose <b>SPINE</b> (Secure Privacy Integration in Next-generation Embodied AI), 
   a unified privacy-aware framework that treats privacy as a dynamic control signal governing cross-stage coupling throughout the entire Embodied AI lifecycle. 
   <br><br>
-  We will continue to <b>UPDATE</b> this repository with new resources and experimental data! 
+  <!-- We will continue to <b>UPDATE</b> this repository with new resources and experimental data!  -->
 </p>
 
 ---
