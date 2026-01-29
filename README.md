@@ -1,9 +1,5 @@
-<div align="center">
-
 # 🔐 Position: Embodied AI Requires a Privacy-Utility Tradeoff
 
-[![arXiv](https://img.shields.io/badge/arXiv-26XX.XXXXX-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/26XX.XXXXX)
-[![GitHub stars](https://img.shields.io/github/stars/rminshen03/EAI_Privacy_Position?style=social)](https://github.com/rminshen03/EAI_Privacy_Position)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/rminshen03/EAI_Privacy_Position/graphs/commit-activity)
 
@@ -16,11 +12,16 @@
 ---
 
 <p align="center">
-  <b>🔥 This is a curated paper list for "Position: Embodied AI Requires a Privacy-Utility Tradeoff."</b>
+  [cite_start]<b>🔥 This is the official repository for evaluation and case studies of the position paper: <br> "Embodied AI Requires a Privacy-Utility Tradeoff".</b>
+  <br><br>
+  [cite_start]We propose <b>SPINE</b> (Secure Privacy Integration in Next-generation Embodied AI), 
+  [cite_start]a unified privacy-aware framework that treats privacy as a dynamic control signal governing cross-stage coupling throughout the entire Embodied AI lifecycle. 
+  <br><br>
+  [cite_start]Our approach embeds privacy as a core primitive across four critical stages:
   <br>
-  [cite_start]To the best of our knowledge, this is the <b>first comprehensive study</b> on privacy-utility tradeoffs in Embodied AI (EAI) systems [cite: 61, 73][cite_start], covering the entire lifecycle across four critical stages: <b>Instruction Understanding</b>, <b>Environment Perception</b>, <b>Action Planning</b>, and <b>Physical Interaction</b>[cite: 60, 63, 151].
-  <br>
-  We will continue to <b>UPDATE</b> this repository! 
+  <b>Instruction Understanding</b> • <b>Environment Perception</b> • <b>Action Planning</b> • <b>Physical Interaction</b>
+  <br><br>
+  We will continue to <b>UPDATE</b> this repository with new resources and experimental data! 
 </p>
 
 ---
