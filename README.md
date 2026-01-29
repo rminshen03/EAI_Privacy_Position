@@ -19,10 +19,6 @@
   We propose <b>SPINE</b> (Secure Privacy Integration in Next-generation Embodied AI), 
   a unified privacy-aware framework that treats privacy as a dynamic control signal governing cross-stage coupling throughout the entire Embodied AI lifecycle. 
   <br><br>
-  Our approach embeds privacy as a core primitive across four critical stages:
-  <br>
-  <b>Instruction Understanding</b> • <b>Environment Perception</b> • <b>Action Planning</b> • <b>Physical Interaction</b>
-  <br><br>
   We will continue to <b>UPDATE</b> this repository with new resources and experimental data! 
 </p>
 
@@ -33,7 +29,6 @@
 - [🏗️ 2. Taxonomy](#2-taxonomy)
 - [💬 3. SPINE Framework Design](#3-spine-framework-design)
 - [👁️ 4. Case Study](#4-case-study)
-- [🔮 5. Challenges and Future Directions](#5-challenges-and-future-directions)
 - [🔖 Citation](#-citation)
 
 ---
@@ -53,7 +48,7 @@ Our evaluation framework categorizes EAI privacy into four interdependent stages
 ---
 
 ## 💬 3. SPINE Framework Design <a name="3-spine-framework-design"></a>
-SPINE functions as a dynamic orchestration layer that adjusts the agent's computational behavior based on a detected privacy classification matrix (ranging from L1 Public to L4 Restricted). Crucially, this tiered approach ensures that privacy constraints are enforced holistically, preventing systemic leakage caused by treating stages as isolated components.
+SPINE functions as a dynamic orchestration layer that adjusts the agent's computational behavior based on a detected privacy classification matrix ranging from L1 Public to L4 Restricted. Crucially, this tiered approach ensures that privacy constraints are enforced holistically, preventing systemic leakage caused by treating stages as isolated components.
 
 ---
 
@@ -68,11 +63,11 @@ We perform a detailed case study on embodied navigation within the SPINE framewo
   <em>Fig. 1: (a) Task Definition; (b) Research Hypotheses (H1 & H2); (c) Qualitative Analysis & Explanation.</em>
 </div>
 
-* **H1: Semantic Compensation**: High-level intent serves as a semantic anchor, allowing the agent to maintain a baseline success rate (SR) even when visual data is sanitized.
+* **H1: Semantic Compensation**: High-level intent serves as a semantic anchor, allowing the agent to maintain a baseline success rate even when visual data is sanitized.
 * **H2: Heuristic Decoupling**: Loss of visual landmarks causes a logic break, forcing the navigation policy to regress from efficient heuristics into stochastic search patterns.
 * **Key Findings**: In experimental scenarios, Success Rate (SR) decreased by 30.3%, while Success weighted by Path Length (SPL) plummeted by 43.3% in restricted settings.
 
-### 4.2. Experimental Design & Hardware Configuration
+### 4.2. Experimental Design（simulator & real-word） 
 <div align="center">
   <img src="assets/fig2.png" width="85%" alt="Hardware and Environment"/>
   <br>
@@ -82,13 +77,6 @@ We perform a detailed case study on embodied navigation within the SPINE framewo
 * **Hardware Platform**: AgileX SCOUT MINI mobile base.
 * **Sensing Suite**: Livox Mid-360 LiDAR for spatial mapping and RealSense Camera for visual input.
 * **Computing Unit**: Jetson AGX Orin module for real-time inference and navigation control.
-
----
-
-## 🔮 5. Challenges and Future Directions <a name="5-challenges-and-future-directions"></a>
-* **Cross-Stage Consistency**: Ensuring seamless propagation of privacy policies from high-level instructions to physical interactions.
-* **Privacy-Utility Co-optimization**: Quantifying the Pareto frontier to balance operational performance with robust data protection.
-* **Hardware-Software Co-design**: Accelerating edge-native inference to support complex encryption without sacrificing physical agility.
 
 ---
 
