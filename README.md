@@ -77,6 +77,7 @@ We perform a detailed case study on embodied navigation within the SPINE framewo
 * **Hardware Platform**: AgileX SCOUT MINI mobile base.
 * **Sensing Suite**: Livox Mid-360 LiDAR for spatial mapping and RealSense Camera for visual input.
 * **Computing Unit**: Jetson AGX Orin module for real-time inference and navigation control.
+### 4.3. Demonstration Video (coming soon)
 
 ---
 
