@@ -6,7 +6,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/rminshen03/EAI_Privacy_Position/graphs/commit-activity)
 
 <h3 align="center">
-  <strong>⭐ Official Repository for the SPINE Framework ⭐</strong>
+  <!-- <strong>⭐ Official Repository for the SPINE Framework ⭐</strong> -->
 </h3>
 
 </div>
