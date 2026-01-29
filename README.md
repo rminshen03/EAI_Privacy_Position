@@ -1,4 +1,4 @@
-<<div align="center">
+<div align="center">
 
 # 🔐 Position: Embodied AI Requires a Privacy-Utility Tradeoff
 
@@ -16,8 +16,9 @@
 ---
 
 <p align="center">
+  <b>🔥 This is a curated paper list for "Position: Embodied AI Requires a Privacy-Utility Tradeoff."</b>
   <br>
-  To the best of our knowledge, this is the <b>first comprehensive study</b> on privacy-utility tradeoffs in Embodied AI systems, covering the entire lifecycle across four critical stages: <b>Instruction Understanding</b>, <b>Environment Perception</b>, <b>Action Planning</b>, and <b>Physical Interaction</b>.
+  [cite_start]To the best of our knowledge, this is the <b>first comprehensive study</b> on privacy-utility tradeoffs in Embodied AI (EAI) systems [cite: 61, 73][cite_start], covering the entire lifecycle across four critical stages: <b>Instruction Understanding</b>, <b>Environment Perception</b>, <b>Action Planning</b>, and <b>Physical Interaction</b>[cite: 60, 63, 151].
   <br>
   We will continue to <b>UPDATE</b> this repository! 
 </p>
@@ -28,7 +29,6 @@
 
 | Date | Event |
 |:-----|:-----|
-| 🔥 2026/01 | Position paper released; associated resources and framework code updated. |
 | 🚀 2026/01 | Repository officially launched with **SPINE** framework documentation. |
 
 ---
@@ -44,42 +44,43 @@
 ---
 
 ## 📖 1. Introduction <a name="1-introduction"></a>
-Embodied AI (EAI) systems are rapidly transitioning from laboratory benchmarks to real-world environments. However, existing solutions often prioritize task utility at the expense of data privacy. We propose **SPINE** (Secure Privacy Integration in Next-generation Embodied AI), a unified framework to navigate this fundamental tradeoff.
+[cite_start]Embodied AI (EAI) systems are rapidly transitioning from laboratory benchmarks to real-world domestic and occupational environments[cite: 59, 68]. [cite_start]However, existing solutions exclusively demonstrate advancements within isolated stages, which may create a systemic privacy crisis when prioritizing task utility at the expense of data privacy[cite: 60, 61]. [cite_start]We propose **SPINE** (Secure Privacy Integration in Next-generation Embodied AI), a unified framework to navigate this fundamental tradeoff[cite: 62, 140].
 
 ---
 
 ## 🏗️ 2. Taxonomy <a name="2-taxonomy"></a>
-Our evaluation framework categorizes EAI privacy into four interdependent stages:
-1. **Instruction Understanding**: Privacy-preserving input and semantic masking.
-2. **Environment Perception**: Anonymization and source-level modality restrictions.
-3. **Action Planning**: Safety-aware navigation and trajectory privacy.
-4. **Physical Interaction**: In-memory execution and secure wipe protocols.
+[cite_start]Our evaluation framework categorizes EAI privacy into four interdependent stages[cite: 63, 172]:
+1. [cite_start]**Instruction Understanding**: Privacy-preserving input and semantic masking[cite: 253, 258].
+2. [cite_start]**Environment Perception**: Anonymization and source-level modality restrictions[cite: 259, 260].
+3. [cite_start]**Action Planning**: Safety-aware navigation and trajectory privacy[cite: 255].
+4. [cite_start]**Physical Interaction**: In-memory execution and secure wipe protocols[cite: 262, 263].
 
 ---
 
 ## 👁️ 4. Case Study <a name="4-case-study"></a>
 
-We evaluate the privacy-utility tradeoff through a long-range navigation task transitioning from Public (L1) to Restricted (L4) zones.
+[cite_start]We perform a detailed case study on embodied navigation within the SPINE framework, evaluating a long-range navigation task transitioning from Public (L1) to Restricted (L4) zones[cite: 343, 401, 410].
 
 ### 4.1. Task Definition, Hypotheses & Results
 <div align="center">
   <img src="assets/fig1.png" width="40%" alt="Task and Analysis"/>
   <br>
-  <em>Fig. 1: (a) Task Definition; (b) Research Hypotheses (H1 & H2); (c) Qualitative Analysis.</em>
+  <em>Fig. 1: (a) Task Definition; (b) Research Hypotheses (H1 & H2); (c) [cite_start]Qualitative Analysis & Explanation[cite: 344, 451, 453].</em>
 </div>
 
-* **H1: Semantic Compensation**: High-level goals from Stage I act as a semantic anchor, maintaining task success rate (SR) even when visual data is sanitized.
-* **H2: Heuristic Decoupling**: Extreme perceptual loss at high privacy levels fractures the coupling between perception and planning, causing a sharp decline in efficiency (SPL).
+* [cite_start]**H1: Semantic Compensation**: High-level intent serves as a semantic anchor, allowing the agent to maintain a baseline success rate even with limited visual input[cite: 457, 460].
+* [cite_start]**H2: Heuristic Decoupling**: Loss of visual landmarks causes a logic break, forcing the agent to regress from efficient heuristics into stochastic search patterns[cite: 536, 537].
+* [cite_start]**Key Findings**: In experimental scenarios, Success Rate (SR) decreased by 30.3%, while Success weighted by Path Length (SPL) plummeted by 43.3%[cite: 540].
 
 ### 4.2. Experimental Design & Hardware Configuration
 <div align="center">
   <img src="assets/fig2.png" width="85%" alt="Hardware and Environment"/>
   <br>
-  <em>Fig. 2: Simulated environment, AgileX SCOUT MINI hardware, and real-world testbed.</em>
+  <em>Fig. [cite_start]2: Hardware platform (AgileX SCOUT MINI) and real-world quadrant deployment[cite: 415, 533].</em>
 </div>
 
-* **Hardware Platform**: AgileX SCOUT MINI equipped with Livox Mid-360 LiDAR, RealSense Camera, and Jetson AGX Orin.
-* **Quantitative Findings**: In experimental scenarios, SR decreased by 30.3%, while SPL fell significantly by 43.3%.
+* [cite_start]**Hardware Platform**: AgileX SCOUT MINI[cite: 415, 492].
+* [cite_start]**Sensing Suite**: Livox Mid-360 LiDAR [cite: 415, 466][cite_start], RealSense Camera [cite: 415, 470][cite_start], and Jetson AGX Orin module[cite: 415, 491].
 
 ---
 
