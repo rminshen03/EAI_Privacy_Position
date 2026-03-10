@@ -83,7 +83,7 @@ We perform a detailed case study on embodied navigation within the SPINE framewo
 ---
 
 ## 🎥 5. Demonstration Video <a name="5-demonstration-video"></a>
-teaser.mp4
+https://github.com/user-attachments/assets/8a64ad80-4395-4259-b723-28573621ed77
 
 ---
 
