@@ -83,11 +83,7 @@ We perform a detailed case study on embodied navigation within the SPINE framewo
 ---
 
 ## 🎥 5. Demonstration Video <a name="5-demonstration-video"></a>
-<div align="center">
-  <video src="assets/video1.mp4" controls width="50%">
-    Your browser does not support the video tag. You can download the video from <a href="assets/video1.mp4">assets/video1.mp4</a>.
-  </video>
-</div>
+https://github.com/rminshen03/EAI_Privacy_Position/raw/main/assets/video1.mp4
 
 ---
 
