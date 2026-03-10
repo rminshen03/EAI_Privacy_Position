@@ -1,6 +1,7 @@
 <div align="center">
 
-# 🔐 Position: Embodied AI Requires a Privacy-Utility Tradeoff
+# 🔐 SPINE Framework
+(Secure Privacy Integration in Next-generation Embodied AI)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/rminshen03/EAI_Privacy_Position/graphs/commit-activity)
@@ -14,7 +15,7 @@
 ---
 
 <p align="center">
-  <b>🔥 This is the repository for evaluation and case studies of the submission: <br> "Position: Embodied AI Requires a Privacy-Utility Tradeoff".</b>
+  <b>🔥 This is the repository for evaluation and case studies of the SPINE framework.</b>
   <br><br>
   We propose <b>SPINE</b> (Secure Privacy Integration in Next-generation Embodied AI), 
   a unified privacy-aware framework that treats privacy as a dynamic control signal governing cross-stage coupling throughout the entire Embodied AI lifecycle. 
@@ -28,7 +29,7 @@
 - [💬 3. SPINE Framework Design](#3-spine-framework-design)
 - [👁️ 4. Case Study](#4-case-study)
 - [🎥 5. Demonstration Video](#5-demonstration-video)
-- [🔖 Citation](#-citation)
+- [🧭 6. Related Projects](#6-related-projects)
 
 ---
 
@@ -81,17 +82,77 @@ We perform a detailed case study on embodied navigation within the SPINE framewo
 
 ---
 
-## 🎥 5. Demonstration Video (Coming Soon) <a name="5-demonstration-video"></a>
-> **Note**: *Full system demonstration video showing transition between privacy levels is under preparation.*
+## 🎥 5. Demonstration Video <a name="5-demonstration-video"></a>
+<div align="center">
+  <video src="assets/video1.mp4" controls width="50%">
+    Your browser does not support the video tag. You can download the video from <a href="assets/video1.mp4">assets/video1.mp4</a>.
+  </video>
+</div>
 
 ---
 
-## 🔖 Citation <a name="-citation"></a>
-```bibtex
-@misc{anonymous2026spine,
-  title={Position: Embodied AI Requires a Privacy-Utility Tradeoff},
-  author={Anonymous Authors},
-  year={2026},
-  booktitle={Under Review},
-  url={[https://github.com/rminshen03/EAI_Privacy_Position](https://github.com/rminshen03/EAI_Privacy_Position)},
-}
+## 🧭 6. Related Projects <a name="6-related-projects"></a>
+The following table outlines representative Vision-and-Language Navigation (VLN) projects relevant to embodied navigation research. It is intended as a starting point for discussing capability, deployment setting, dataset dependence, and the current lack of explicit system-level privacy mechanisms.
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Website</th>
+      <th>Features</th>
+      <th>Datasets</th>
+      <th>Open Source?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>R2R</b></td>
+      <td><a href="https://aclanthology.org/D18-1367/">Link</a></td>
+      <td>Classic discrete VLN<br>Fine-grained instructions<br>Offline training</td>
+      <td><b>Matterport3D</b><br>90 buildings<br>21,567 instructions</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><b>VLN-CE</b></td>
+      <td><a href="https://jacobkrantz.github.io/vlnce/">Link</a></td>
+      <td>Continuous 3D VLN<br>Collision-aware actions<br>Habitat execution</td>
+      <td><b>Matterport3D mesh in Habitat</b><br>90 indoor scenes<br>21,567 instructions</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><b>CVDN</b></td>
+      <td><a href="https://cvdn.dev/">Link</a></td>
+      <td>Dialog-based navigation<br>QA history<br>Cooperative grounding</td>
+      <td><b>MP3D-based scenes</b><br>83 houses<br>2,050 dialogs and 7k+ trajectories</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><b>HA-R2R</b></td>
+      <td><a href="https://lpercc.github.io/HA3D_simulator/">Link</a></td>
+      <td>Human-aware VLN<br>Dynamic activities<br>Collision-sensitive evaluation</td>
+      <td><b>MP3D with simulated humans</b><br>90 buildings<br>21,567 human-like instructions</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><b>VLN-PE</b></td>
+      <td><a href="https://openaccess.thecvf.com/">Link</a></td>
+      <td>Physically embodied VLN<br>Cross-morphology evaluation<br>Collision and fall constraints</td>
+      <td><b>MP3D and 3DGS-Lab-VLN</b><br>Train/val-seen/val-unseen episodes<br>441 / 111 / 1,287</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><b>TOUCHDOWN</b></td>
+      <td><a href="https://openaccess.thecvf.com/">Link</a></td>
+      <td>Street-view VLN<br>Outdoor grounding<br>Spatial description resolution</td>
+      <td><b>Google Street View NYC graph</b><br>29,641 panoramas<br>61,319 edges</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><b>InternData-N1</b></td>
+      <td><a href="https://huggingface.co/">Link</a></td>
+      <td>Unified VLN format<br>Multi-scene and multi-morphology data<br>Quality filtering</td>
+      <td><b>3k+ scenes</b><br>830k VLN data<br>VLN-CE, VLN-PE, and VLN-N1 in LeRobot v2.1</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
