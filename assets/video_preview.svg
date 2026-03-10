@@ -1,0 +1,24 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" rx="32" fill="#0F172A"/>
+  <rect x="24" y="24" width="1152" height="627" rx="24" fill="url(#bg)"/>
+  <circle cx="600" cy="338" r="92" fill="rgba(255,255,255,0.18)"/>
+  <circle cx="600" cy="338" r="78" fill="white"/>
+  <path d="M573 287L659 338L573 389V287Z" fill="#0F172A"/>
+  <text x="600" y="160" text-anchor="middle" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">
+    SPINE Demonstration Video
+  </text>
+  <text x="600" y="216" text-anchor="middle" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="24">
+    Click to watch the full system demo
+  </text>
+  <rect x="336" y="500" width="528" height="64" rx="16" fill="rgba(255,255,255,0.12)"/>
+  <text x="600" y="541" text-anchor="middle" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="24">
+    Privacy-aware navigation across Public to Restricted zones
+  </text>
+  <defs>
+    <linearGradient id="bg" x1="86" y1="54" x2="1092" y2="621" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D4ED8"/>
+      <stop offset="0.5" stop-color="#0F766E"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+  </defs>
+</svg>
