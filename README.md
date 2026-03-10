@@ -83,13 +83,15 @@ We perform a detailed case study on embodied navigation within the SPINE framewo
 ---
 
 ## 🎥 5. Demonstration Video <a name="5-demonstration-video"></a>
-<table align="center">
-  <tr>
-    <td align="center">
-      https://github.com/user-attachments/assets/8a64ad80-4395-4259-b723-28573621ed77
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/8a64ad80-4395-4259-b723-28573621ed77">
+    <img src="assets/demo.gif" width="50%" alt="SPINE demonstration preview"/>
+  </a>
+</p>
+
+<p align="center">
+  <sub>Click the GIF to open the full video.</sub>
+</p>
 
 ---
 
