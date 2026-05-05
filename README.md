@@ -5,6 +5,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/rminshen03/EAI_Privacy_Position/graphs/commit-activity)
+[![ICML 2026](https://img.shields.io/badge/ICML%202026-Position%20Paper%20Accepted-success.svg)](#)
 
 <h3 align="center">
   <!-- <strong>⭐ Official Repository for the SPINE Framework ⭐</strong> -->
@@ -19,9 +20,18 @@
   <br><br>
   We propose <b>SPINE</b> (Secure Privacy Integration in Next-generation Embodied AI), 
   a unified privacy-aware framework that treats privacy as a dynamic control signal governing cross-stage coupling throughout the entire Embodied AI lifecycle. 
+  <br><br>
+  <b>Status:</b> Accepted as an <b>ICML 2026 Position Paper</b>.
 </p>
 
 ---
+
+## 📢 News
+
+| Date | Event |
+|:-----|:-----|
+| 2026/05 | <b>ICML 2026 Position Paper accepted</b>. |
+| 2026/01 | Repository created and SPINE framework materials published. |
 
 ## 🔍 Table of Contents
 - [📖 1. Introduction](#1-introduction)
